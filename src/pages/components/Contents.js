@@ -52,7 +52,12 @@ const Contents = () => {
 
   return (
     <div className="contentsTitle">
-      <p>콘텐츠 큐레이션 제목</p>
+      <p>음반 차트</p>
+      <div className="albumCharts">
+        <span>앨범 정보</span>
+        <span>순위</span>
+      </div>
+
       {list.map((aContent, i) => (
         <Content key={i} aContent={aContent} />
       ))}

@@ -46,6 +46,6 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   centerPadding: '0px',
-  autoplay: false,
+  autoplay: true,
   arrow: false,
 };

@@ -6,7 +6,10 @@ const Content = ({ aContent }) => {
       <div className="contentWrapper">
         <img src={aContent.imageURL} className="contentLeft" alt="coverImage" />
 
-        <div className="contentRight">{aContent.title}</div>
+        <div className="contentRight">
+          <span>{aContent.title}</span>
+          <span className="albumGrade">{aContent.id}</span>
+        </div>
       </div>
     </div>
   );

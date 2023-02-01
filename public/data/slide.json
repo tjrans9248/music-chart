@@ -12,7 +12,8 @@
     "title": "[MELON] 10월 2주차 멜론",
     "image": "https://images.unsplash.com/photo-1485579149621-3123dd979885?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60",
     "vote": "투표하기",
-    "date": "2023-01-23 ~ 2023-02-23"
+    "date": "2023-01-23 ~ 2023-02-23",
+    "link": "https://www.melon.com/"
   },
 
   {
@@ -20,6 +21,7 @@
     "title": "[GENIE] 10월 2주차 지니",
     "image": "https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG11c2ljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60",
     "vote": "투표하기",
-    "date": "2023-01-23 ~ 2023-02-23"
+    "date": "2023-01-23 ~ 2023-02-23",
+    "link": "https://genie.co.kr/"
   }
 ]

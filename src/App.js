@@ -11,8 +11,8 @@ const App = () => {
     <div className="appContainer">
       <div className="appWrapper">
         <Nav />
-        <Slides />
-        <Contents />
+        {/* <Slides />
+        <Contents /> */}
         {/* <Footer /> */}
       </div>
     </div>
