@@ -5,16 +5,33 @@ import Slider from 'react-slick';
 import { Link, useNavigate } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import axios from 'axios';
 
 const Slides = () => {
   const [slides, setSlides] = useState([]);
 
+  // useEffect(() => {
+  //   fetch('./data/slide.json')
+  //     .then(res => res.json())
+  //     .then(data => setSlides(data));
+  // }, []);
+
+  const getData = async () => {
+    try {
+      const res = await axios.get('./data/slide.json');
+      setSlides(res.data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   useEffect(() => {
-    fetch('./data/slide.json')
-      .then(res => res.json())
-      .then(data => setSlides(data));
+    getData();
   }, []);
 
+  const handleVote = () => {
+    alert('현재 투표 기간이 아닙니다.');
+  };
   return (
     <div className="container">
       <div>
@@ -24,9 +41,12 @@ const Slides = () => {
               <a href={slide.link} alt="link">
                 <img src={slide.image} alt="image" className="slideImage" />
               </a>
+              <div className="ongoing">{slide.onGoing}</div>
               <div className="titleContainer">
                 <h4>{slide.title}</h4>
-                <button className="voteBtn">{slide.vote}</button>
+                <button className="voteBtn" onClick={handleVote}>
+                  투표하기
+                </button>
               </div>
               <p>{slide.date}</p>
             </div>
