@@ -2,19 +2,12 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
-import { Link, useNavigate } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import axios from 'axios';
 
 const Slides = () => {
   const [slides, setSlides] = useState([]);
-
-  // useEffect(() => {
-  //   fetch('./data/slide.json')
-  //     .then(res => res.json())
-  //     .then(data => setSlides(data));
-  // }, []);
 
   const getData = async () => {
     try {
@@ -34,7 +27,7 @@ const Slides = () => {
   };
   return (
     <div className="container">
-      <div>
+      <div className="test">
         <Slider {...settings} className="slider">
           {slides.map(slide => (
             <div className="slideContainer" key={slide.id}>

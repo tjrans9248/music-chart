@@ -5,7 +5,6 @@ const Whook = () => {
     <div>
       <Slides />
       <Slides />
-      <Slides />
     </div>
   );
 };
